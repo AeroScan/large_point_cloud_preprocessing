@@ -32,18 +32,18 @@ class LargePointCloudPreprocessing
 public:
     struct Params
     {
-        bool use_search_surface_param;
+        bool use_search_surface_param   = true;
         std::vector<double> cb_min;
         std::vector<double> cb_max;
-        unsigned int rs_param;
+        unsigned int rs_param           = 0;
         std::vector<double> vg_params;
         std::vector<double> sor_params;
-        double neomp_param;
-        double reescale_param;
-        bool centralize_param;
-        bool align_param;
-        double noise_add_param;
-        double cube_reescale_param;
+        double neomp_param              = 0.0;
+        double reescale_param           = 0.0;
+        bool centralize_param           = false;
+        bool align_param                = false;
+        double noise_add_param          = 0.0;
+        double cube_reescale_param      = 0.0;
     };
 private:
     bool use_search_surface_param   = true;

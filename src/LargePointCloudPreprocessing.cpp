@@ -155,6 +155,7 @@ void LargePointCloudPreprocessing::readParameters(Params theParams)
 
     /* Number of points to random sample in the input point cloud. */
     rs_param = theParams.rs_param;
+    std::cout << "THE RS_PARAM IS: " << rs_param << std::endl;
 
     /* Leaf size for voxel grid for x, y and z cordinates, if just leaf is passed, it is used for all cordinates. */
     vg_params = theParams.vg_params;
